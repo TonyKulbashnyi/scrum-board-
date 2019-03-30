@@ -1,0 +1,44 @@
+.authentication {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #663399;
+  background-color: #663399;
+  font-family: 'Baloo Chettan', cursive;
+  width: 500px;
+  height: 300px;
+
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+input {
+  border: 1px solid #fff;
+  margin: 0 auto;
+  background-color: #ba75ff;
+  color: white;
+}
+
+.submit {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #663399;
+
+  &:hover {
+    background-color: #639;
+    color: #ffffff;
+    transition: color, background-color ease .9s;
+  }
+}
+
+span {
+  color: white;
+  text-transform: uppercase;
+  margin: 0 auto;
+}

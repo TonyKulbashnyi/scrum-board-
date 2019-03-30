@@ -1,0 +1,54 @@
+.table-body {
+  border: 2px solid #663399;
+  width: 1000px;
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Baloo Chettan', cursive;
+}
+.section {
+  width: 100%;
+}
+.section:not(:last-child) {
+  border-right: 2px solid #639;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 50px;
+  background-color: #639;
+  color: white;
+}
+
+.card {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0;
+  background-color: #ba75ff;
+  border-bottom: 2px solid #663399;
+  color: white;
+}
+
+h3 {
+  margin: 0;
+  font-weight: normal;
+  text-align: center;
+}
+
+.close {
+  top: 5px;
+  right: 5px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.description {
+  padding: 5px;
+}
+
+.section {
+  position: relative;
+}

@@ -1,0 +1,31 @@
+.new-card {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  background-color: #dcbaff;
+  width: 100%;
+  text-align: center;
+  color: #663399;
+}
+input {
+  background-color: #dcbaff;
+  margin: 10px;
+  border: none;
+  border-bottom: 2px solid #663399;
+  color: #663399;
+}
+
+input::placeholder {
+  color: rebeccapurple;
+}
+
+input[type='submit'] {
+  border: 2px solid #663399;
+  cursor: pointer;
+  &:hover {
+    background-color: rebeccapurple;
+    color: white;
+    transition: color, background-color 1s ease;
+  }
+}

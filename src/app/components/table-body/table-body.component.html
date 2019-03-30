@@ -1,0 +1,24 @@
+<div class="table-body">
+  <div *ngFor="let section of sections" class="section">
+    <header class="header">
+      {{ section.name | uppercase}}
+    </header>
+    <div>
+      <ng-container *ngFor="let item of cards; let id = index">
+        <div *ngIf="item.section_id === section.id" class="card">
+          <div>
+            <i class="fas fa-times close" (click)="onDelete(id)"></i>
+            <h3>
+              {{item.title | uppercase}}
+            </h3>
+            <div class="description">
+              {{item.description}}
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+    <app-new-card [cardId] = section.id></app-new-card>
+  </div>
+</div>
+
